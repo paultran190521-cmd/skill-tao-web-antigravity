@@ -26,6 +26,9 @@ Skill này đóng vai trò là **Giám đốc Thiết kế UI/UX & Chuyên gia T
 6. **[Cẩm nang Agent Kiểm định Chất lượng Web (`references/qa-inspector-agent.md`)](./references/qa-inspector-agent.md)**:
    - **Ma trận 5 Cổng Kiểm định (100 Điểm)**: Zero-Fluff, Typography Tiếng Việt & H1, Phối màu 60-30-10 & Viền 1px, Tailwind v4 Keyframes, và Type Safety.
    - **Thực thi tự động**: Chạy `npm run audit` trước khi bàn giao.
+7. **[Cẩm nang Thuật toán Đối chiếu & Cố vấn Khớp Mẫu Website (`references/template-matching-engine.md`)](./references/template-matching-engine.md)**:
+   - **Ma trận phân tích 4 tham số ADN Đề bài**: Tự động bóc tách (Sản phẩm, Chân dung khách hàng, Mục tiêu CTA, Vibe) và đối chiếu với 10 mẫu có sẵn.
+   - **Đề xuất 2 phương án**: 1 Mẫu tối ưu nhất (Best Match) + 1 Mẫu dự phòng (Alternative Match) kèm Bản đồ Rót nội dung (Content Injection Map).
 
 ---
 
@@ -105,19 +108,22 @@ Xác định ngữ cảnh đầu vào của người dùng theo 1 trong 3 trư�
 
 ---
 
-### BƯỚC 2: Đề xuất Mẫu Website (Template) & Vòng lặp Chốt Bố cục Các Phần (Layout Blueprint Loop)
+### BƯỚC 2: Cố Vấn Khớp Mẫu Website (Template Matching Engine) & Vòng lặp Chốt Bố cục
 
-1. **Đề xuất Mẫu & Liệt kê Bố cục**:
-   * Dựa vào lĩnh vực đã phân tích ở Bước 1, chọn từ **10 Kho Template Website** (`@shadcn-studio`, `@spaceui`, `@weinc`, `@shadcnui-blocks`, `@watermelon`, `@hirael`, `@aicanvas`, `@reui`, `@dashboardblocks`, `@cnippet-blocks`) ra **2–3 phương án Mẫu Bố cục (Template)** phù hợp nhất.
-   * Liệt kê rõ ràng **danh sách các Phần (Sections) từ trên xuống dưới** của bố cục khuyên dùng (Ví dụ: *Phần 1: Thanh Menu điều hướng $\rightarrow$ Phần 2: Màn hình chính Hero & Nút CTA $\rightarrow$ Phần 3: Nỗi đau & Sự đồng cảm $\rightarrow$ Phần 4: Giải pháp & Lợi ích cốt lõi $\rightarrow$ Phần 5: Lộ trình/Quy trình $\rightarrow$ Phần 6: Kết quả & Đánh giá khách hàng $\rightarrow$ Phần 7: Bảng giá & Ưu đãi $\rightarrow$ Phần 8: Hỏi đáp FAQ & Form đăng ký*).
+1. **Đối chiếu Đề bài với 10+ Mẫu Đã Đóng Gói (Template Match Proposal)**:
+   * Tra cứu [references/template-matching-engine.md](./references/template-matching-engine.md), bóc tách 4 thông số: *Sản phẩm*, *Khách hàng mục tiêu*, *Hành động CTA số 1* và *Vibe thẩm mỹ*.
+   * Đề xuất **1 Mẫu Khuyên Dùng Số 1 (Best Match)** (từ 10 mẫu đã dựng sẵn: `OpenPro`, `SimpleLight`, `Stellar`, `Neon`, `Linear`, `Raycast`, `Resend`, `Dub`, `Supabase`, `Cal`, `EdTechCourse`) giải thích rõ vì sao cấu trúc của mẫu này sinh ra để chuyển đổi cho đề bài đó.
+   * Đề xuất kèm **1 Mẫu Dự Phòng Số 2 (Alternative Match)** nếu khách hàng muốn đổi vibe (Sáng vs Tối, Nền tĩnh vs Nền động).
+   * Lập **Bản đồ Rót Nội dung (Content Injection Map)**: Liệt kê rõ ràng danh sách các Sections và cách nội dung từ đề bài của khách sẽ được rót vào từng khu vực (Hero $\rightarrow$ Value Props $\rightarrow$ Social Proof $\rightarrow$ Interactive Demo $\rightarrow$ CTA).
 
-2. **Vòng lặp Hỏi - Bổ sung - Gửi lại Bố cục Đã Chốt (Bắt buộc)**:
-   * **Lần hỏi 1:** *"Bạn có đồng ý với bố cục các phần như trên không? Bạn muốn bổ sung, lược bỏ hay đổi vị trí phần nào không?"*
-   * **Nếu người dùng yêu cầu bổ sung / chỉnh sửa:**
-     * Cập nhật lại danh sách các phần theo đúng ý người dùng.
+2. **Vòng lặp Hỏi - Bổ sung - Chốt Mẫu & Bố cục (Bắt buộc)**:
+   * **Lần hỏi 1:** *"Dựa trên đề bài của bạn, tôi đề xuất mẫu [Tên Mẫu 1] là tối ưu nhất vì [Lý do CRO]. Bạn có đồng ý triển khai mẫu này và bố cục các phần như trên không, hay muốn đổi sang [Mẫu 2] / thêm bớt phần nào?"*
+   * **Nếu người dùng yêu cầu chỉnh sửa:**
+     * Cập nhật lại danh sách các phần và bản đồ rót nội dung theo đúng ý người dùng.
      * **Gửi lại toàn bộ Bố cục hoàn chỉnh đã chốt** để người dùng nhìn tổng thể.
-     * **Lần hỏi 2:** *"Đây là bố cục hoàn chỉnh sau khi đã bổ sung. Bạn xem còn cần hiệu chỉnh hay thêm bớt phần nào nữa không? Nếu bạn chốt bố cục này, chúng ta sẽ chuyển sang Bước 3 (Chọn hiệu ứng cho từng khu vực) nhé!"*
-   * **Chỉ khi người dùng xác nhận Chốt Bố cục**, mới chuyển sang Bước 3!
+     * **Lần hỏi 2:** *"Đây là bố cục hoàn chỉnh sau khi đã bổ sung. Bạn duyệt chốt phương án này để tôi tiến hành rót nội dung và chạy kiểm định chất lượng nhé!"*
+   * **Chỉ khi người dùng xác nhận Chốt**, mới chuyển sang Bước 3 & Bước 4 để rót nội dung!
+
 
 ---
 
