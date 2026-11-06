@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Cá Nhân Mindful-Ops | Resend Style</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    ::selection {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-white selection:text-black min-h-screen relative">
+
+  <!-- Ambient Radial Glow -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-b from-neutral-800/30 via-neutral-900/10 to-transparent blur-[120px] pointer-events-none -z-10"></div>
+
+  <!-- 1. Header Điều Hướng -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-black/80 border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg border border-white/10 bg-neutral-900 flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <rect width="16" height="16" x="4" y="4" rx="2" stroke-width="2"/>
+            <path stroke-width="2" d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-sm tracking-tight text-white leading-none">Mindful-Ops</span>
+          <span class="text-xs text-neutral-500 font-mono mt-0.5">Song não • Công nghệ vị nhân sinh</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-xs text-neutral-400">
+        <a href="#song-nao" class="hover:text-white transition-colors">Song não</a>
+        <a href="#triet-ly" class="hover:text-white transition-colors">Triết lý</a>
+        <a href="#giai-phap" class="hover:text-white transition-colors">Giải pháp</a>
+        <a href="#du-an" class="hover:text-white transition-colors">Dự án</a>
+      </nav>
+
+      <a href="#ket-noi" class="px-3.5 py-1.5 rounded-md bg-white text-black hover:bg-neutral-200 text-xs font-semibold transition-colors">
+        Đặt lịch 1:1
+      </a>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="pt-20 pb-16 px-4 text-center relative">
+    <div class="max-w-4xl mx-auto flex flex-col items-center">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-white/10 bg-neutral-950 text-xs text-neutral-300 mb-8 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Kỹ sư hệ thống & Nhà tham vấn tâm lý
+      </div>
+
+      <!-- Main Title - ALL CAPS 7 words -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] tracking-tight max-w-3xl">
+        KIẾN TẠO CÔNG NGHỆ VỊ NHÂN SINH
+      </h1>
+
+      <!-- Subheading -->
+      <p class="mt-6 text-sm sm:text-base text-neutral-400 max-w-2xl leading-relaxed">
+        Cầu nối vững chắc giữa thế giới nội tâm con người và sức mạnh tính toán vô hạn của hệ thống tự động hóa.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="#ket-noi" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-black text-xs sm:text-sm font-semibold hover:bg-neutral-200 transition-colors shadow-lg">
+          Đặt lịch đàm đạo 1:1
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a href="#song-nao" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-white/10 bg-neutral-950 hover:bg-neutral-900 text-xs sm:text-sm font-medium text-neutral-300 transition-colors">
+          Khám phá tư duy song não
+        </a>
+      </div>
+
+      <!-- 3. Dual-Brain Interactive Console (Trọng tâm trải nghiệm) -->
+      <div id="song-nao" class="mt-14 w-full max-w-3xl rounded-xl border border-white/10 bg-neutral-950 p-4 sm:p-6 text-left shadow-2xl relative">
+        <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-neutral-900 text-xs">
+          <div class="flex items-center gap-1 sm:gap-2" id="consoleTabs">
+            <button onclick="switchTab('system')" id="tab-system" class="px-3 py-1.5 rounded-md text-xs transition-colors flex items-center gap-1.5 bg-neutral-800 text-white font-medium border border-white/10">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              Kỹ sư hệ thống
+            </button>
+            <button onclick="switchTab('empathy')" id="tab-empathy" class="px-3 py-1.5 rounded-md text-xs transition-colors flex items-center gap-1.5 text-neutral-500 hover:text-white">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              Tham vấn tâm thức
+            </button>
+            <button onclick="switchTab('mindful')" id="tab-mindful" class="px-3 py-1.5 rounded-md text-xs transition-colors flex items-center gap-1.5 text-neutral-500 hover:text-white">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" stroke-width="2"/></svg>
+              Vận hành tỉnh thức
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span id="langBadge" class="text-xs font-mono text-neutral-500 hidden sm:inline">typescript</span>
+            <button onclick="copySnippet()" id="copyBtn" class="px-2.5 py-1 rounded border border-white/10 text-neutral-400 hover:text-white hover:bg-neutral-900 transition-colors flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" stroke-width="2"/><path stroke-width="2" d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              <span id="copyText" class="text-xs">Sao chép</span>
+            </button>
+          </div>
+        </div>
+
+        <pre class="mt-4 font-mono text-xs sm:text-sm text-neutral-300 overflow-x-auto leading-relaxed p-2"><code id="codeDisplay">// 1. BÁN CẦU HỆ THỐNG: KIẾN TRÚC SƯ TỰ ĐỘNG HÓA & AI
+export const systemArchitect = {
+  role: "Kỹ sư hệ thống & Master Agent Developer",
+  coreStack: ["React 19", "Next.js 15", "Tailwind v4", "MCP Protocol"],
+  operationalLoop: {
+    dataIngestion: "Cào dữ liệu & chuẩn hóa tự động",
+    aiAgentEngine: "Lập luận đa tác tử xử lý báo cáo chuyên sâu",
+    metricDashboard: "Đo lường thời gian thực giải phóng sức lao động"
+  },
+  status: "Đang vận hành luồng chuyển đổi số tự động"
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Lưới Bento Triết Lý "Mindful-Ops" -->
+  <section id="triet-ly" class="py-20 px-4 border-t border-neutral-900">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl mb-12">
+        <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Triết lý cốt lõi</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white mt-2 tracking-tight">
+          KỶ LUẬT THỰC THI VÀ TĨNH LẶNG NỘI TÂM
+        </h2>
+        <p class="text-sm text-neutral-400 mt-3 leading-relaxed">
+          Tối ưu hóa không phải là cuộc đua kiệt sức. Khi hệ thống được xây dựng trên khoa học não bộ, nó giải phóng con người để quay về với chính mình.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Card 1 -->
+        <div class="p-6 rounded-xl border border-white/10 bg-neutral-950/60 hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg border border-white/10 bg-neutral-900 flex items-center justify-center mb-4 text-white">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            </div>
+            <h3 class="text-base font-bold text-white">Hệ thống hóa cái vô hình</h3>
+            <p class="mt-2 text-xs text-neutral-400 leading-relaxed">
+              Bắt mạch cảm xúc, thói quen và nỗi đau tâm lý, đóng gói thành quy trình và công cụ web đo lường được.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-neutral-900 text-xs font-mono text-neutral-500">
+            Playbook • Đo lường được
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-6 rounded-xl border border-white/10 bg-neutral-950/60 hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg border border-white/10 bg-neutral-900 flex items-center justify-center mb-4 text-white">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2" stroke-width="2"/><path stroke-width="2" d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+            </div>
+            <h3 class="text-base font-bold text-white">Tinh thần kiến tạo kiên bỉ</h3>
+            <p class="mt-2 text-xs text-neutral-400 leading-relaxed">
+              Không đợi sẵn công cụ. Tự ráp dàn PC, mày mò giao thức MCP, kỹ thuật cào dữ liệu và thiết lập Master Agent.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-neutral-900 text-xs font-mono text-neutral-500">
+            Builder mindset • Tự học
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 rounded-xl border border-white/10 bg-neutral-950/60 hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg border border-white/10 bg-neutral-900 flex items-center justify-center mb-4 text-white">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+            </div>
+            <h3 class="text-base font-bold text-white">Kỷ luật và tỉ mỉ sắc bén</h3>
+            <p class="mt-2 text-xs text-neutral-400 leading-relaxed">
+              Thể hiện từ chiết xuất chuẩn một ly espresso 24g basket, soạn từng lời sẻ chia, đến bộ lọc tự kiểm tra cho AI.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-neutral-900 text-xs font-mono text-neutral-500">
+            Chi tiết vi mô • Chuẩn xác
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-6 rounded-xl border border-white/10 bg-neutral-950/60 hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg border border-white/10 bg-neutral-900 flex items-center justify-center mb-4 text-white">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            </div>
+            <h3 class="text-base font-bold text-white">Cân bằng hiệu suất và tâm thức</h3>
+            <p class="mt-2 text-xs text-neutral-400 leading-relaxed">
+              Công nghệ vị nhân sinh: Tự động hóa giải phóng thời gian để con người kết nối lại với chính mình và chữa lành.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-neutral-900 text-xs font-mono text-neutral-500">
+            Bình an • Chữa lành
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 3 Bình Diện Giải Quyết Vấn Đề -->
+  <section id="giai-phap" class="py-20 px-4 border-t border-neutral-900 bg-neutral-950/40">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl mb-12">
+        <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Giá trị thực tiễn</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white mt-2 tracking-tight">
+          GIẢI PHÁP TRÊN 3 BÌNH DIỆN
+        </h2>
+        <p class="text-sm text-neutral-400 mt-3 leading-relaxed">
+          Tác động cụ thể mang lại cho thân chủ cá nhân, tổ chức vận hành và cộng đồng học tập.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Bình diện 1: Cá nhân -->
+        <div class="p-8 rounded-xl border border-white/10 bg-black flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/10 transition-colors pointer-events-none"></div>
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-white/10 flex items-center justify-center text-white">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              </div>
+              <div>
+                <span class="text-xs text-neutral-500 font-mono">Bình diện 01</span>
+                <h3 class="text-base font-bold text-white">Thân chủ cá nhân 1:1</h3>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-xs text-neutral-400 leading-relaxed">
+              <div class="p-3.5 rounded-lg border border-white/5 bg-neutral-950">
+                <span class="font-semibold text-white block mb-1">Tháo gỡ điểm mù tâm lý</span>
+                Giúp gọi tên những cảm xúc hỗn độn, nhìn nhận lại mối quan hệ và cung cấp công cụ tự phản tỉnh.
+              </div>
+              <div class="p-3.5 rounded-lg border border-white/5 bg-neutral-950">
+                <span class="font-semibold text-white block mb-1">Cơ sở khoa học rõ ràng</span>
+                Dựa trên khoa học não bộ và lý thuyết Dòng chảy (Flow), mang lại sự nâng đỡ thực chất thay vì lời khuyên sáo rỗng.
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-neutral-900">
+            <a href="#ket-noi" class="text-xs text-white inline-flex items-center gap-1.5 hover:underline font-medium">
+              Đặt lịch tham vấn cá nhân
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bình diện 2: Tổ chức -->
+        <div class="p-8 rounded-xl border border-white/10 bg-black flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/10 transition-colors pointer-events-none"></div>
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-white/10 flex items-center justify-center text-white">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              </div>
+              <div>
+                <span class="text-xs text-neutral-500 font-mono">Bình diện 02</span>
+                <h3 class="text-base font-bold text-white">Doanh nghiệp & tổ chức</h3>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-xs text-neutral-400 leading-relaxed">
+              <div class="p-3.5 rounded-lg border border-white/5 bg-neutral-950">
+                <span class="font-semibold text-white block mb-1">Đồng hành cùng đối tác lớn</span>
+                Hỗ trợ chuyển đổi số và quản trị hiệu suất cho SUNNYCARE, METTASOUL, ROA.
+              </div>
+              <div class="p-3.5 rounded-lg border border-white/5 bg-neutral-950">
+                <span class="font-semibold text-white block mb-1">Xóa bỏ nút thắt vận hành</span>
+                Xây dựng AI Agent và Dashboard tự động hóa, giải phóng chuyên gia khỏi giấy tờ để tập trung chuyên môn sâu.
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-neutral-900">
+            <a href="#ket-noi" class="text-xs text-white inline-flex items-center gap-1.5 hover:underline font-medium">
+              Tư vấn tự động hóa vận hành
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bình diện 3: Cộng đồng -->
+        <div class="p-8 rounded-xl border border-white/10 bg-black flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/10 transition-colors pointer-events-none"></div>
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-white/10 flex items-center justify-center text-white">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              </div>
+              <div>
+                <span class="text-xs text-neutral-500 font-mono">Bình diện 03</span>
+                <h3 class="text-base font-bold text-white">Cộng đồng học tập</h3>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-xs text-neutral-400 leading-relaxed">
+              <div class="p-3.5 rounded-lg border border-white/5 bg-neutral-950">
+                <span class="font-semibold text-white block mb-1">Kênh tri thức thực chứng</span>
+                Phát triển nội dung trên kênh Thay Đổi Tâm Thức và Kỷ Luật Tự Thân.
+              </div>
+              <div class="p-3.5 rounded-lg border border-white/5 bg-neutral-950">
+                <span class="font-semibold text-white block mb-1">Dịch thuật tri thức hàn lâm</span>
+                Nhào nặn lý thuyết tâm lý học và khoa học não bộ phức tạp thành video, bài viết trực quan dễ áp dụng mỗi ngày.
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-neutral-900">
+            <a href="#du-an" class="text-xs text-white inline-flex items-center gap-1.5 hover:underline font-medium">
+              Xem các bài học cộng đồng
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Dự Án & Playbook Tiêu Biểu -->
+  <section id="du-an" class="py-20 px-4 border-t border-neutral-900">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Hệ sinh thái kiến tạo</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white mt-2 tracking-tight">
+            CÔNG CỤ VÀ DỰ ÁN NỔI BẬT
+          </h2>
+        </div>
+        <p class="text-xs text-neutral-500 font-mono">
+          Next.js 15 • AI Agents • MCP Protocols
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- Project 1 -->
+        <div class="p-5 rounded-lg border border-white/10 bg-neutral-950 hover:bg-neutral-900/60 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 rounded bg-neutral-900 border border-white/10 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white">Hệ thống Master AI Agent & Tự động hóa lịch dạy</h3>
+              <p class="text-xs text-neutral-400 mt-1">
+                Tự động đồng bộ và tổng hợp lịch giảng dạy, loại bỏ 100% khâu nhập liệu thủ công cho tổ chức giáo dục.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 shrink-0">
+            <span class="px-2 py-0.5 rounded bg-neutral-900 border border-white/5">SUNNYCARE</span>
+            <span class="px-2 py-0.5 rounded bg-neutral-900 border border-white/5">Node / AI</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="p-5 rounded-lg border border-white/10 bg-neutral-950 hover:bg-neutral-900/60 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 rounded bg-neutral-900 border border-white/10 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white">Dashboard xử lý kết quả trắc nghiệm tâm lý</h3>
+              <p class="text-xs text-neutral-400 mt-1">
+                Bắt mạch dữ liệu phản hồi, tạo báo cáo phân tích tâm thức tự động với giao diện trực quan cho chuyên gia.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 shrink-0">
+            <span class="px-2 py-0.5 rounded bg-neutral-900 border border-white/5">METTASOUL</span>
+            <span class="px-2 py-0.5 rounded bg-neutral-900 border border-white/5">React / Analytics</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="p-5 rounded-lg border border-white/10 bg-neutral-950 hover:bg-neutral-900/60 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 rounded bg-neutral-900 border border-white/10 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white">Chuỗi nội dung "Thay Đổi Tâm Thức" & "Kỷ Luật Tự Thân"</h3>
+              <p class="text-xs text-neutral-400 mt-1">
+                Hơn 100+ bài phân tích chuyên sâu dịch thuật tâm lý học hàn lâm thành cẩm nang hành động thực tiễn.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 shrink-0">
+            <span class="px-2 py-0.5 rounded bg-neutral-900 border border-white/5">Cộng đồng</span>
+            <span class="px-2 py-0.5 rounded bg-neutral-900 border border-white/5">Mindful-Ops</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Chân Trang & Khối Đặt Lịch Hẹn 1:1 -->
+  <section id="ket-noi" class="py-24 px-4 border-t border-neutral-900 bg-neutral-950 text-center relative">
+    <div class="max-w-3xl mx-auto">
+      <div class="w-12 h-12 rounded-xl border border-white/10 bg-neutral-900 mx-auto flex items-center justify-center text-white mb-6">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2" stroke-width="2"/><line x1="16" x2="16" y1="2" y2="6" stroke-width="2"/><line x1="8" x2="8" y1="2" y2="6" stroke-width="2"/><line x1="3" x2="21" y1="10" stroke-width="2"/></svg>
+      </div>
+
+      <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight">
+        KẾT NỐI VÀ ĐÀM ĐẠO TRỰC TIẾP
+      </h2>
+      <p class="mt-4 text-xs sm:text-sm text-neutral-400 max-w-lg mx-auto leading-relaxed">
+        Dành 30 phút trò chuyện về chuyển đổi số vận hành, xây dựng AI Agent, hoặc đồng hành tháo gỡ điểm mù tâm lý.
+      </p>
+
+      <div class="mt-10 p-6 rounded-xl border border-white/10 bg-black text-left max-w-xl mx-auto shadow-2xl">
+        <div class="flex items-center justify-between pb-4 border-b border-neutral-900">
+          <div>
+            <span class="text-xs font-bold text-white block">Phiên đàm đạo trực tuyến 1:1</span>
+            <span class="text-xs text-neutral-500">Thời lượng 30 phút • Google Meet</span>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-medium border border-emerald-500/20">
+            Đang mở lịch
+          </span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 mt-4 text-xs">
+          <div onclick="selectSlot(this)" class="slot-item p-2.5 rounded border border-white/10 bg-neutral-950 text-center hover:border-white/30 cursor-pointer transition-colors">
+            <span class="text-neutral-500 block text-xs">Thứ 2</span>
+            <span class="font-semibold text-white">09:00 - 09:30</span>
+          </div>
+          <div onclick="selectSlot(this)" class="slot-item p-2.5 rounded border border-white/20 bg-neutral-900 text-center hover:border-white/30 cursor-pointer transition-colors">
+            <span class="text-neutral-400 block text-xs">Thứ 3</span>
+            <span class="font-semibold text-white">14:00 - 14:30</span>
+          </div>
+          <div onclick="selectSlot(this)" class="slot-item p-2.5 rounded border border-white/10 bg-neutral-950 text-center hover:border-white/30 cursor-pointer transition-colors">
+            <span class="text-neutral-500 block text-xs">Thứ 5</span>
+            <span class="font-semibold text-white">16:00 - 16:30</span>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="mailto:contact@mindfulops.dev" class="w-full sm:flex-1 py-2.5 rounded-md bg-white text-black text-xs font-semibold hover:bg-neutral-200 transition-colors text-center">
+            Xác nhận đặt lịch ngay
+          </a>
+          <a href="https://zalo.me" target="_blank" rel="noreferrer" class="px-4 py-2.5 rounded-md border border-white/10 bg-neutral-900 text-neutral-300 text-xs font-medium hover:bg-neutral-800 transition-colors text-center">
+            Nhắn tin nhanh
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-neutral-900 text-center text-xs text-neutral-500 font-mono">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Mindful-Ops Architect. Công nghệ vị nhân sinh.</p>
+      <div class="flex items-center gap-6">
+        <a href="#song-nao" class="hover:text-white transition-colors">Song não</a>
+        <a href="#triet-ly" class="hover:text-white transition-colors">Triết lý</a>
+        <a href="#giai-phap" class="hover:text-white transition-colors">Giải pháp</a>
+        <a href="#ket-noi" class="hover:text-white transition-colors">Đặt lịch</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const snippets = {
+      system: `// 1. BÁN CẦU HỆ THỐNG: KIẾN TRÚC SƯ TỰ ĐỘNG HÓA & AI
+export const systemArchitect = {
+  role: "Kỹ sư hệ thống & Master Agent Developer",
+  coreStack: ["React 19", "Next.js 15", "Tailwind v4", "MCP Protocol"],
+  operationalLoop: {
+    dataIngestion: "Cào dữ liệu & chuẩn hóa tự động",
+    aiAgentEngine: "Lập luận đa tác tử xử lý báo cáo chuyên sâu",
+    metricDashboard: "Đo lường thời gian thực giải phóng sức lao động"
+  },
+  status: "Đang vận hành luồng chuyển đổi số tự động"
+};`,
+      empathy: `/* 2. BÁN CẦU TÂM THỨC: THẤU CẢM VÀ KHOA HỌC NÃO BỘ */
+{
+  "triet_ly_tiep_can": "Khoa học não bộ kết hợp lý thuyết Dòng chảy (Flow)",
+  "nguyen_tac_tham_van": "Lắng nghe sâu không phán xét, tháo gỡ điểm mù",
+  "bo_cong_cu_thuc_hanh": [
+    "Gọi tên chính xác các trạng thái cảm xúc hỗn độn",
+    "Tái định hình nhận thức qua dữ liệu hành vi thực tế",
+    "Đóng gói bài học kỹ năng sống thành bài tập tự phản tỉnh"
+  ],
+  "muc_tieu": "Nâng đỡ tinh thần bằng giải pháp khoa học thực chứng"
+}`,
+      mindful: `# 3. ĐIỂM HỢP NHẤT: VẬN HÀNH TỈNH THỨC (MINDFUL-OPS)
+dinh_vi: "Cầu nối giữa thế giới nội tâm và sức mạnh công nghệ"
+phuong_trinh_can_bang:
+  ve_hieu_suat: "Kỷ luật tự thân + Tự động hóa tác vụ lặp lại"
+  ve_tam_thuc: "Bình an nội tâm + Kết nối sâu với chính mình"
+  ket_qua_dau_ra:
+    - "Loại bỏ hoàn toàn sự kiệt sức do tác vụ thừa thãi"
+    - "Tạo không gian tĩnh lặng cho công việc sáng tạo sâu"
+    - "Xây dựng hệ sinh thái công nghệ nhân văn vì con người"`
+    };
+
+    let currentTab = 'system';
+
+    function switchTab(tab) {
+      currentTab = tab;
+      const codeDisplay = document.getElementById('codeDisplay');
+      const langBadge = document.getElementById('langBadge');
+      
+      codeDisplay.textContent = snippets[tab];
+      langBadge.textContent = tab === 'system' ? 'typescript' : tab === 'empathy' ? 'json' : 'yaml';
+
+      ['system', 'empathy', 'mindful'].forEach(t => {
+        const btn = document.getElementById('tab-' + t);
+        if (t === tab) {
+          btn.className = "px-3 py-1.5 rounded-md text-xs transition-colors flex items-center gap-1.5 bg-neutral-800 text-white font-medium border border-white/10";
+        } else {
+          btn.className = "px-3 py-1.5 rounded-md text-xs transition-colors flex items-center gap-1.5 text-neutral-500 hover:text-white";
+        }
+      });
+    }
+
+    function copySnippet() {
+      navigator.clipboard.writeText(snippets[currentTab]);
+      const copyText = document.getElementById('copyText');
+      copyText.textContent = "Đã chép ✓";
+      copyText.classList.add("text-emerald-400", "font-medium");
+      setTimeout(() => {
+        copyText.textContent = "Sao chép";
+        copyText.classList.remove("text-emerald-400", "font-medium");
+      }, 2000);
+    }
+
+    function selectSlot(element) {
+      document.querySelectorAll('.slot-item').forEach(el => {
+        el.className = "slot-item p-2.5 rounded border border-white/10 bg-neutral-950 text-center hover:border-white/30 cursor-pointer transition-colors";
+      });
+      element.className = "slot-item p-2.5 rounded border border-white/30 bg-neutral-900 text-center cursor-pointer transition-colors";
+    }
+  </script>
+</body>
+</html>
