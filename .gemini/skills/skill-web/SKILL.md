@@ -15,9 +15,10 @@ Skill này đóng vai trò là **Giám đốc Thiết kế UI/UX & Chuyên gia T
 1. **[Từ điển 9 Thư viện Hiệu ứng, 10 Kho Template & 11 Kho Sơ đồ Quy trình (`references/component-catalog.md`)](./references/component-catalog.md)**: Tra cứu toàn bộ Template nguyên trang, Section Blocks, Hiệu ứng lẻ (Nền, Viền tĩnh/động, Thẻ 3D, Nút CTA, Menu...) và đặc biệt là **Mục 8: Hệ thống Sơ đồ Quy trình, Flowchart, Swimlane & Node-Graph (`diagram-design` + 10 kho sơ đồ)**.
 2. **[Bản đồ Ngành nghề & Tâm lý Chuyển đổi (`references/industry-mapping.md`)](./references/industry-mapping.md)**: Công thức bố cục và phối hiệu ứng theo từng lĩnh vực.
 3. **[Skill Chuyên sâu 45 Loại Sơ đồ (`../diagram-design/SKILL.md`)](../diagram-design/SKILL.md)**: Bất cứ khi nào trang web có phần **Quy trình vận hành, Các bước triển khai đa vai trò, Luồng dữ liệu, Phễu chuyển đổi hoặc Kiến trúc hệ thống**, **TUYỆT ĐỐI KHÔNG** chỉ dựng các ô Card rời rạc xếp lưới đơn điệu! Hãy kết hợp `diagram-design` (Swimlane, Process, Data Flow, Sankey, Service Blueprint, Exploded 3D) hoặc `@xyflow` / `@magicui/animated-beam` / `@creance` để vẽ thành **Sơ đồ có đường dẫn luồng, mũi tên, phân làn vai trò và tia sáng chạy thực tế**.
-4. **[Cẩm nang Typography & Quy tắc Viết hoa Tiếng Việt (`references/typography-vietnamese.md`)](./references/typography-vietnamese.md)**:
-   - **Tiêu đề chính (Main Title / H1 / Hero Heading / Tên mục lớn)**: **BẮT BUỘC VIẾT HOA TOÀN BỘ (UPPERCASE / ALL CAPS)** nhưng phải tinh gọn (tối đa 5–8 từ/dòng), không viết cả đoạn dài.
-   - **Tất cả các tiêu đề phụ, thẻ card, đề mục con, nút bấm, nhãn, mô tả**: **BẮT BUỘC chỉ viết hoa chữ cái đầu tiên (Sentence case)**. **TUYỆT ĐỐI KHÔNG viết hoa chữ cái đầu từng từ (Title Case kiểu tiếng Anh) và KHÔNG viết hoa ALL CAPS cho thẻ card con**. Ưu tiên 2 font `Be Vietnam Pro` (toàn trang) và `Montserrat` (tiêu đề/CTA).
+4. **[Cẩm nang Typography & Kỷ luật Viết chữ Tối giản Tiếng Việt (`references/typography-vietnamese.md`)](./references/typography-vietnamese.md)**:
+   - **Ngân sách từ ngữ cứng (Strict Word Budget)**: Tiêu đề H1/Hero BẮT BUỘC viết hoa toàn bộ (UPPERCASE) tinh gọn 5–8 từ/dòng. Tiêu đề phụ (Subtitle) tối đa 12–20 từ (1 câu duy nhất). Thẻ card con 10–15 từ (Sentence case). Menu 1–2 từ. Nút CTA 2–3 từ.
+   - **Bộ lọc Zero-Fluff (Cắt bỏ hư từ)**: Cấm các từ đệm rườm rà (*"chúng tôi"*, *"những"*, *"các"*, *"nhằm mục đích"*, *"có thể giúp bạn"*). Luôn dùng công thức: `[Động từ hành động mạnh] + [Đối tượng] + [Con số đo lường]`.
+   - **Nguyên lý "Show, Don't Tell"**: Dùng code tab, mockup tương tác, sơ đồ luồng thay cho các khối văn bản dài đặc quánh.
 
 ---
 

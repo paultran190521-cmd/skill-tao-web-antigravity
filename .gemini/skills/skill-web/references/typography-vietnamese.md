@@ -83,7 +83,43 @@ Toàn bộ các font trên đã được khai báo sẵn tại file `@/lib/fonts
     GIẢI PHÁP VẬN HÀNH TỰ ĐỘNG HÓA
   </h1>
   <p className="font-sans text-muted-foreground text-base mt-2">
-    Hệ thống giúp tối ưu hóa chi phí và gia tăng tỷ lệ chuyển đổi cho doanh nghiệp của bạn.
+    Tự động hóa toàn diện quy trình bán hàng, tiết kiệm 50% thời gian xử lý đơn.
   </p>
 </div>
 ```
+
+---
+
+## V. QUY CHUẨN VIẾT NỘI DUNG TỐI GIẢN TRỌNG TÂM TIẾNG VIỆT (PHONG CÁCH LINEAR / RAYCAST / RESEND)
+
+### 1. Bảng Ngân Sách Số Từ Cứng (Strict Word Budget)
+| Thành phần giao diện | Giới hạn từ | Quy tắc viết hoa & Trọng tâm |
+| :--- | :---: | :--- |
+| **Menu điều hướng** | **1–2 từ** | *Lợi ích*, *Lộ trình*, *Học phí*, *Tài liệu*, *FAQ* |
+| **Huy hiệu (Chip / Badge)** | **2–4 từ** | Trạng thái kỹ thuật, số hiệu phiên bản hoặc cam kết nhanh |
+| **Tiêu đề Hero (H1)** | **5–8 từ / dòng** | **ALL CAPS**, nhịp điệu dứt khoát, nêu rõ giải pháp đỉnh cao |
+| **Tiêu đề phụ (Subtitle)** | **12–20 từ** | **Sentence case**, đúng 1 câu duy nhất (Bạn là ai + Cho ai + Lợi ích gì) |
+| **Tiêu đề thẻ Card con** | **3–5 từ** | **Sentence case**, ngắn gọn, bắt đầu bằng tính từ hoặc động từ |
+| **Mô tả thẻ Card con** | **10–15 từ** | Tối đa 2 dòng, giải thích đúng 1 tính năng cốt lõi |
+| **Nút bấm chính (CTA)** | **2–3 từ** | Động từ hành động dứt khoát (*"Bắt đầu ngay"*, *"Dùng thử miễn phí"*) |
+
+### 2. Kỹ Thuật Lọc Bỏ Hư Từ & Trợ Từ (Zero-Fluff Filter)
+- **Tuyệt đối không dùng**: *"chúng tôi"*, *"quý khách"*, *"những"*, *"các"*, *"nhằm mục đích"*, *"có thể giúp bạn"*, *"một cách hiệu quả"*, *"tự hào mang lại"*.
+- **Trước và Sau**:
+  - ❌ *Dài dòng:* *"Nền tảng của chúng tôi tự hào đem đến giải pháp giúp các lập trình viên có thể quản lý và rút gọn link một cách tối ưu nhất."* (26 từ)
+  - ✅ *Tối giản sắc bén:* *"Rút gọn link trong 1 giây • Đo lường chuyển đổi thời gian thực."* (12 từ)
+
+### 3. Công Thức "Động Từ Hành Động + Danh Từ Kết Quả + Con Số"
+$$\text{Thông điệp} = \textbf{[Động từ hành động mạnh]} + \textbf{[Đối tượng]} + \textbf{[Con số đo lường]}$$
+- *"Cắt giảm 70% chi phí đám mây"*
+- *"Độ trễ dưới 15ms tại 300+ trung tâm dữ liệu"*
+- *"Triển khai ứng dụng trong 30 giây"*
+
+### 4. Nguyên Lý "Show, Don't Tell" (Thay Chữ Bằng Tương Tác Trực Quan)
+- Tuyệt đối không dùng văn bản dài 3-4 đoạn để giải thích tính năng.
+- Thay thế hoàn toàn bằng:
+  - 1 khung gõ thử lệnh hoặc URL trực tiếp.
+  - 1 tab mã nguồn có nút copy nhanh.
+  - 1 sơ đồ quy trình có tia sáng chạy thực tế (`diagram-design` / `xyflow`).
+  - 1 widget đặt lịch hẹn / chọn khung giờ trực tiếp.
+
