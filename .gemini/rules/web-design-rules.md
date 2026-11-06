@@ -41,16 +41,38 @@
    - **Snack**: Tiêu đề in đậm 3-5 từ nêu lợi ích cốt lõi.
    - **Meal**: 1 câu thông số thực tế đo lường được.
 
-## 3. BỘ TIÊU CHUẨN THIẾT KẾ & TỐI ƯU CRO
-1. **Khoảng đệm an toàn**: Khi có fixed header + countdown banner, luôn đệm `pt-36` đến `pt-44` ở Hero.
-2. **Kỷ luật màu sắc 60-30-10**: 60% Nền tối/sáng (`neutral-950`), 30% Cấu trúc (`neutral-800` viền, `neutral-300` chữ), 10% Accent duy nhất cho CTA chính.
-3. **Một điểm nhấn chuyển động duy nhất trong 1 tầm nhìn (One Hero Motion)**: Nút CTA chính luôn có độ tương phản và nổi bật cao nhất.
-4. **Keyframe Tailwind CSS v4**: Luôn kiểm tra khai báo `@keyframes` và class phụ trợ trong `globals.css`.
+## 3. KỶ LUẬT PHỐI MÀU 60-30-10 & HỆ THỐNG PHÂN TẦNG MÀU CHỮ (BẮT BUỘC)
 
-## 4. QUY TRÌNH 6 BƯỚC CỦA /skill-web
+Tuyệt đối cấm biến website thành "bảng đèn neon / rạp xiếc màu sắc". Bắt buộc tuân thủ:
+
+1. **Tỷ lệ phối màu 60 — 30 — 10**:
+   - **60% Nền chủ đạo**: Nền tối sâu (`neutral-950`, `#08090a`, `#050505`) hoặc Nền sáng tinh tế (`#ffffff`, `zinc-50`).
+   - **30% Cấu trúc & Nền phụ**: Viền mảnh 1px (`border-neutral-800`, `border-white/10`), Thẻ card tối nhẹ (`neutral-900/60` kèm `backdrop-blur-md`), Chữ nội dung (`neutral-400`).
+   - **10% Điểm nhấn thương hiệu (Chỉ 1 tông màu Accent duy nhất)**: Dành riêng cho nút Primary CTA, viền phát sáng sản phẩm chủ lực (Ví dụ: `indigo-600`, `emerald-500`, `blue-600`, `rose-500`). CẤM dùng 3-4 màu neon rực rỡ cạnh tranh CTA!
+
+2. **Hệ thống phân tầng màu chữ 4 cấp bậc (Typographic Color Hierarchy)**:
+   - **Cấp 1 - Tiêu đề chính (H1, H2, Số lớn)**: `text-white` (`#ffffff`) trên nền tối, hoặc `text-zinc-950` trên nền sáng. Rõ ràng, dứt khoát.
+   - **Cấp 2 - Nội dung & Subtitle**: `text-neutral-400` / `text-zinc-400` (giảm độ chói, chống mỏi mắt người đọc).
+   - **Cấp 3 - Thông tin phụ / Meta**: `text-neutral-500` / `text-zinc-500` (ngày tháng, phím tắt, nhãn phụ).
+   - **Cấp 4 - Chữ điểm nhấn (Accent Text)**: Dùng đúng màu thương hiệu hoặc Gradient tối đa 2 tông màu gần nhau (`from-indigo-400 to-indigo-200`). CẤM gradient cầu vồng 5-7 màu.
+
+3. **Viền Hairline 1px & Ánh sáng tản mờ (Ambient Glow)**:
+   - Chỉ dùng viền mảnh 1px (`border-neutral-800` hoặc `border-white/10`). Cấm viền 2px-3px thô kệch.
+   - Không đổ bóng đen đặc (`drop-shadow`). Dùng quầng sáng ambient tản rộng `blur-[130px] pointer-events-none -z-10` phía sau Hero.
+
+4. **Hạn chế màu chỉ báo trạng thái (Semantic Colors)**:
+   - Màu xanh lá, đỏ, cam chỉ xuất hiện ở chấm tròn vi mô (Status Dot 6px) hoặc icon nhỏ 14px. Không đổ nền nguyên một thẻ card thành màu chói lóa.
+
+## 4. BỘ TIÊU CHUẨN THIẾT KẾ & TỐI ƯU CRO
+1. **Khoảng đệm an toàn**: Khi có fixed header + countdown banner, luôn đệm `pt-36` đến `pt-44` ở Hero.
+2. **Một điểm nhấn chuyển động duy nhất trong 1 tầm nhìn (One Hero Motion)**: Nút CTA chính luôn có độ tương phản và nổi bật cao nhất.
+3. **Keyframe Tailwind CSS v4**: Luôn kiểm tra khai báo `@keyframes` và class phụ trợ trong `globals.css`.
+
+## 5. QUY TRÌNH 6 BƯỚC CỦA /skill-web
 1. Nhận diện lĩnh vực & Cố vấn đánh giá web cũ/tài liệu gốc.
 2. Đề xuất Template (trong 10 mẫu tích hợp sẵn) & Chốt danh sách Sections qua vòng lặp hỏi duyệt.
 3. Lập Bảng đề xuất hiệu ứng theo từng khu vực (Hero, Card, Viền tĩnh, Viền động, CTA).
-4. Thi công, gọt giũa câu chữ tiếng Việt theo chuẩn tối giản & Cố vấn phân tích 2 mặt.
+4. Thi công, gọt giũa câu chữ tiếng Việt theo chuẩn tối giản & Áp dụng kỷ luật phối màu 60-30-10.
 5. Báo cáo giá trị gia tăng sau mỗi cập nhật (Thị giác, Tâm lý khách hàng, CRO).
 6. Đồng hành tinh chỉnh liên tục cho đến khi hoàn thiện 100%.
+

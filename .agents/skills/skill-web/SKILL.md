@@ -19,6 +19,10 @@ Skill này đóng vai trò là **Giám đốc Thiết kế UI/UX & Chuyên gia T
    - **Ngân sách từ ngữ cứng (Strict Word Budget)**: Tiêu đề H1/Hero BẮT BUỘC viết hoa toàn bộ (UPPERCASE) tinh gọn 5–8 từ/dòng. Tiêu đề phụ (Subtitle) tối đa 12–20 từ (1 câu duy nhất). Thẻ card con 10–15 từ (Sentence case). Menu 1–2 từ. Nút CTA 2–3 từ.
    - **Bộ lọc Zero-Fluff (Cắt bỏ hư từ)**: Cấm các từ đệm rườm rà (*"chúng tôi"*, *"những"*, *"các"*, *"nhằm mục đích"*, *"có thể giúp bạn"*). Luôn dùng công thức: `[Động từ hành động mạnh] + [Đối tượng] + [Con số đo lường]`.
    - **Nguyên lý "Show, Don't Tell"**: Dùng code tab, mockup tương tác, sơ đồ luồng thay cho các khối văn bản dài đặc quánh.
+5. **[Cẩm nang Kỷ luật Phối màu & Phân tầng Màu chữ (`references/color-palette-system.md`)](./references/color-palette-system.md)**:
+   - **Tỷ lệ 60 — 30 — 10**: 60% Nền tối sâu hoặc Trắng tinh khôi, 30% Viền mảnh 1px + Thẻ card tối mờ + Chữ nội dung xám bạc, 10% Duy nhất 1 tông màu Accent cho Primary CTA.
+   - **Phân tầng màu chữ 4 cấp bậc**: Cấp 1 (Tiêu đề trắng tinh `text-white`), Cấp 2 (Nội dung xám `neutral-400`), Cấp 3 (Phụ mờ `neutral-500`), Cấp 4 (Điểm nhấn Accent).
+   - **Tra cứu 10 Bảng màu mẫu**: Phối chuẩn theo 10 template đỉnh cao (Linear, Raycast, Supabase, Cal.com...).
 
 ---
 
