@@ -98,7 +98,27 @@ npx shadcn@latest add <component-name>
 
 ---
 
+## 💎 Bộ 10 Mẫu Landing Page Cao Cấp Tuyển Chọn Đã Đóng Gói Sẵn
+
+Dự án đã tích hợp sẵn 10 mẫu Landing Page hoàn chỉnh trong `src/components/templates/`, sẵn sàng gọi ra sử dụng ngay hoặc dùng trong skill `/skill-web`:
+
+| STT | Tên Mẫu | Lĩnh vực / Phong cách | Component Export | Điểm nhấn thị giác & CRO |
+| :---: | :--- | :--- | :--- | :--- |
+| **01** | **Open PRO** | Open Source & Dev Tools | `OpenProTemplate` | Nền Dark Neutral-950, Ánh sáng tím/indigo `indigo-600`, Lệnh cài đặt nhanh và video demo |
+| **02** | **Simple Light** | Clean Light Minimal | `SimpleLightTemplate` | Nền trắng sáng tinh tế, Điểm nhấn xanh dương `blue-600`, Tab tính năng mượt mà, chống mỏi mắt |
+| **03** | **Stellar** | AI / Web3 / Cloud Infrastructure | `StellarTemplate` | Nền vũ trụ hạt sao, Ánh sáng Neon tím & Cyan `cyan-400`, Thẻ chỉ số node mạng lưới |
+| **04** | **Neon Agent** | Cyberpunk / AI Tech / Automation | `NeonTemplate` | Nền Obsidian `#050505`, Viền Neon xanh ngọc `emerald-400`, Luồng lệnh Terminal 60fps |
+| **05** | **Linear Style** | Quản lý dự án phần mềm | `LinearTemplate` | Viền mảnh 1px hairline, Nền `#08090a`, Phím tắt `Command + K`, Danh sách issue tương tác |
+| **06** | **Raycast Style** | Mac Launcher & AI Tools | `RaycastTemplate` | Thanh lệnh Command Palette tìm kiếm nhanh, Ánh sáng rọi đỏ cam `rose-500` |
+| **07** | **Resend Style** | Nền tảng Email cho Dev / API | `ResendTemplate` | Tối giản đen trắng tuyệt đối, Tab code đa ngôn ngữ (Node.js/Python/cURL), Copy nhanh |
+| **08** | **Dub.co Style** | Rút gọn link & Phân tích chuyển đổi | `DubTemplate` | Khung rút gọn link tương tác trực tiếp ở Hero, Thẻ số liệu chuyển đổi real-time |
+| **09** | **Supabase Style** | Cơ sở dữ liệu đám mây / BaaS | `SupabaseTemplate` | Nền đen sâu, Xanh ngọc lục bảo `#3ecf8e`, Trình duyệt bảng Postgres & Trình soạn SQL |
+| **10** | **Cal.com Style** | Nền tảng Đặt lịch hẹn / Coaching | `CalTemplate` | Widget chọn khung giờ và đặt lịch hẹn 1:1 không ma sát ngay tại màn hình chính |
+
+---
+
 ## 📁 Cấu Trúc Thư Mục Dự Án
+
 
 ```
 ├── .agents/                    # Kỹ năng AI chuẩn mở (Claude Code, Cursor, Codex)
@@ -111,7 +131,8 @@ npx shadcn@latest add <component-name>
 ├── src/
 │   ├── app/                    # Next.js 15 App Router (page.tsx, globals.css, layout.tsx)
 │   ├── components/
-│   │   ├── landing/            # 14 Section của trang Landing Page
+│   │   ├── landing/            # 14 Section của trang Landing Page EdTech
+│   │   ├── templates/          # 10 Mẫu Landing Page Cao Cấp tuyển chọn (Open PRO, Linear, Supabase...)
 │   │   └── ui/                 # 15+ UI Effect Components từ 9 thư viện đỉnh cao
 │   └── lib/                    # utils.ts & fonts.ts (12 font tiếng Việt Google Fonts)
 ├── .gitignore                  # Bỏ qua node_modules, .next, .env

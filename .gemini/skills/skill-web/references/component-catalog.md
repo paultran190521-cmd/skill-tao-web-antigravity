@@ -156,21 +156,22 @@ Khi cần dựng nhanh **bố cục nguyên trang (Full-Page Layout)** hoặc **
 
 ---
 
-## 10. Hệ thống Typography Web Chuẩn Tiếng Việt Không Lỗi Dấu (`typography-vietnamese.md`)
+## 11. Bộ 10 Mẫu Landing Page Cao Cấp Đã Đóng Gói Sẵn Trong Repo (`src/components/templates/`)
 
-> **Xem cẩm nang chi tiết tại**: `references/typography-vietnamese.md`
-> - **2 Font Chủ Lực Ưu Tiên**:
->   1. `Be Vietnam Pro` (`font-be-vietnam` / `font-sans`): Thiết kế riêng cho tiếng Việt, cân bằng tuyệt đối, không bao giờ lỗi dấu.
->   2. `Montserrat` (`font-montserrat` / `font-heading`): Geometric Sans kinh điển cho Hero Title, CTA, Navbar.
-> - **10 Font Quốc Tế Hiện Đại (100% Native Vietnamese Subset)**:
->   1. `Inter` (`font-inter`): UI/UX SaaS số 1 thế giới.
->   2. `Plus Jakarta Sans` (`font-jakarta`): Tech, Fintech, Startup 2024-2026.
->   3. `Manrope` (`font-manrope`): x-height lớn, đọc trên điện thoại cực rõ.
->   4. `Space Grotesk` (`font-space-grotesk`): AI, Web3, Cyber Brutalism.
->   5. `Lexend` (`font-lexend`): Tối ưu hóa khoa học thị giác, tăng tốc độ đọc 20%.
->   6. `Epilogue` (`font-epilogue`): Cá tính mạnh, tương phản cao cho Editorial & Slogan.
->   7. `Archivo` (`font-archivo`): Grotesk vững chãi cho Tin tức & B2B.
->   8. `Work Sans` (`font-work-sans`): Lịch lãm, trang nhã cho Doanh nghiệp & Luật.
->   9. `Mulish` (`font-mulish`): Tối giản Bắc Âu cho Nội thất & Mỹ phẩm Organic.
->   10. `Lora` (`font-lora`): Serif chân chữ đương đại quý phái cho Spa, Trang sức, Luxury.
->   *(Đã cấu hình sẵn biến CSS và import trong `@/lib/fonts.ts` và `globals.css`)*
+Repo đã đóng gói sẵn 10 mẫu Landing Page hoàn chỉnh, tuân thủ 100% quy tắc viết hoa tiếng Việt và kỷ luật màu sắc 60-30-10:
+
+| Mã Mẫu | Tên Mẫu | Lĩnh vực phù hợp | Component Tương ứng | Phong cách & Điểm nhấn thị giác |
+| :--- | :--- | :--- | :--- | :--- |
+| `01-open-pro` | **Open PRO** | Open Source, Công cụ lập trình viên, Developer SaaS | `OpenProTemplate` | Nền Dark Neutral-950, Ánh sáng tím/indigo `indigo-600`, Video demo trigger |
+| `02-simple-light` | **Simple Light** | Clean Light Minimal, Quản lý tài liệu, Notion-like | `SimpleLightTemplate` | Nền trắng sáng tinh tế, Điểm nhấn xanh dương `blue-600`, Tab tính năng mượt mà |
+| `03-stellar` | **Stellar** | AI, Web3, Điện toán đám mây phi tập trung | `StellarTemplate` | Nền hạt sao vũ trụ, Viền Neon Cyan `cyan-400` & Tím `purple-500`, Metric cards |
+| `04-neon` | **Neon Agent** | Cyberpunk, AI Tác tử tự động, Hacker-Chic | `NeonTemplate` | Nền Obsidian `#050505`, Viền Neon xanh ngọc `emerald-400`, Luồng lệnh Terminal |
+| `05-linear` | **Linear Style** | Quản lý dự án phần mềm, Agile, Engineering | `LinearTemplate` | Viền mảnh 1px hairline, Nền `#08090a`, Phím tắt `Command + K`, Issue preview |
+| `06-raycast` | **Raycast Style** | Ứng dụng Desktop, Launcher tiện ích, AI Tools | `RaycastTemplate` | Thanh Command Palette tìm kiếm lệnh nhanh, Ánh sáng rọi đỏ cam `rose-500` |
+| `07-resend` | **Resend Style** | Nền tảng API, Email giao dịch, Hạ tầng Dev | `ResendTemplate` | Tối giản đen trắng tuyệt đối, Tab code đa ngôn ngữ (Node.js/Python/cURL) |
+| `08-dub` | **Dub.co Style** | Rút gọn link, Phân tích chuyển đổi Marketing | `DubTemplate` | Khung rút gọn link tương tác trực tiếp ở Hero, Thẻ số liệu chuyển đổi real-time |
+| `09-supabase` | **Supabase Style** | Cơ sở dữ liệu đám mây, BaaS, Postgres | `SupabaseTemplate` | Nền đen sâu, Xanh ngọc lục bảo `#3ecf8e`, Trình duyệt bảng Postgres & SQL editor |
+| `10-cal` | **Cal.com Style** | Đặt lịch hẹn trực tuyến, Tư vấn 1:1, Coaching | `CalTemplate` | Widget chọn khung giờ và đặt lịch hẹn không ma sát ngay tại màn hình chính |
+
+Khi tư vấn ở **Bước 2** của `/skill-web`, bạn có thể chủ động đề xuất 1 trong 10 mẫu này cho người dùng duyệt. Khi người dùng đồng ý, chỉ cần gọi component tương ứng từ `@/components/templates`.
+

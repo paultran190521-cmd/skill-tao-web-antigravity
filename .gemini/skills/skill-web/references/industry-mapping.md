@@ -62,3 +62,23 @@ Tài liệu này cung cấp các **Công thức phối hiệu ứng chuẩn (Pre
   4. **Quy trình Hợp tác**: `@aceternity/timeline` — Thể hiện rõ các bước làm việc minh bạch.
   5. **Logo Đối tác & Khách hàng**: `@aceternity/infinite-moving-cards` — Dải logo đối tác trôi nhẹ liên tục.
   6. **Biểu mẫu Nhận báo giá / Tư vấn**: Tổ hợp `shadcn` (`card`, `input`, `select`, `textarea`, `button`).
+
+---
+
+## Nhóm 6: Bản đồ Ánh xạ 10 Mẫu Landing Page Cao Cấp Đã Đóng Gói Sẵn Trong Repo
+
+Khi người dùng cần giải pháp nhanh hoặc muốn phong cách chuẩn từ các công ty công nghệ lớn, hãy dùng trực tiếp 10 mẫu đã dựng sẵn trong `@/components/templates`:
+
+| Nhu cầu & Lĩnh vực của Người dùng | Mẫu Đề xuất Khuyên Dùng | File Template |
+| :--- | :--- | :--- |
+| Open Source, Thư viện code, Công cụ Dev, GitHub repo | **01: Open PRO Style** | `OpenProTemplate` |
+| Quản lý tài liệu, Notion-like, SaaS tối giản nền sáng | **02: Simple Light Style** | `SimpleLightTemplate` |
+| Trí tuệ nhân tạo, Web3, Mạng lưới đám mây, GPU/Node | **03: Stellar Style** | `StellarTemplate` |
+| Tác tử tự động (AI Agents), Cyberpunk, DevOps, CLI | **04: Neon Agent Style** | `NeonTemplate` |
+| Quản lý dự án, Issue Tracker, Phần mềm kỹ sư cấp cao | **05: Linear Style** | `LinearTemplate` |
+| Ứng dụng Desktop, Launcher tiện ích, Phím tắt AI | **06: Raycast Style** | `RaycastTemplate` |
+| Nền tảng API, Email giao dịch, SDK lập trình viên | **07: Resend Style** | `ResendTemplate` |
+| Rút gọn link, Phân tích dữ liệu click, Marketing | **08: Dub.co Style** | `DubTemplate` |
+| Cơ sở dữ liệu đám mây, Postgres, Backend BaaS | **09: Supabase Style** | `SupabaseTemplate` |
+| Đặt lịch hẹn chuyên gia, Coaching 1:1, Demo doanh nghiệp | **10: Cal.com Style** | `CalTemplate` |
+
