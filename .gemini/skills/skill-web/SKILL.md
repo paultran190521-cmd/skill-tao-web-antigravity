@@ -23,12 +23,16 @@ Skill này đóng vai trò là **Giám đốc Thiết kế UI/UX & Chuyên gia T
    - **Tỷ lệ 60 — 30 — 10**: 60% Nền tối sâu hoặc Trắng tinh khôi, 30% Viền mảnh 1px + Thẻ card tối mờ + Chữ nội dung xám bạc, 10% Duy nhất 1 tông màu Accent cho Primary CTA.
    - **Phân tầng màu chữ 4 cấp bậc**: Cấp 1 (Tiêu đề trắng tinh `text-white`), Cấp 2 (Nội dung xám `neutral-400`), Cấp 3 (Phụ mờ `neutral-500`), Cấp 4 (Điểm nhấn Accent).
    - **Tra cứu 10 Bảng màu mẫu**: Phối chuẩn theo 10 template đỉnh cao (Linear, Raycast, Supabase, Cal.com...).
+6. **[Cẩm nang Agent Kiểm định Chất lượng Web (`references/qa-inspector-agent.md`)](./references/qa-inspector-agent.md)**:
+   - **Ma trận 5 Cổng Kiểm định (100 Điểm)**: Zero-Fluff, Typography Tiếng Việt & H1, Phối màu 60-30-10 & Viền 1px, Tailwind v4 Keyframes, và Type Safety.
+   - **Thực thi tự động**: Chạy `npm run audit` trước khi bàn giao.
 
 ---
 
-## BỘ 6 NGUYÊN TẮC VÀNG CHỐNG LỖI UI/UX & TỐI ƯU CHUYỂN ĐỔI (BẮT BUỘC 100%)
+## BỘ 7 NGUYÊN TẮC VÀNG CHỐNG LỖI UI/UX & TỐI ƯU CHUYỂN ĐỔI (BẮT BUỘC 100%)
 
-Để đảm bảo website sau khi tạo luôn đạt chất lượng thiết kế cao cấp, hiện đại, thoáng đãng và dẫn dắt chuyển đổi mạnh mẽ, bạn **BẮT BUỘC TUÂN THỦ 6 NGUYÊN TẮC SAU ĐÂY TRONG MỌI DỰ ÁN**:
+Để đảm bảo website sau khi tạo luôn đạt chất lượng thiết kế cao cấp, hiện đại, thoáng đãng và dẫn dắt chuyển đổi mạnh mẽ, bạn **BẮT BUỘC TUÂN THỦ 7 NGUYÊN TẮC SAU ĐÂY TRONG MỌI DỰ ÁN**:
+
 
 1. 📌 **Độ dài Menu & Nhãn điều hướng tối giản (1–2 từ tối đa)**:
    - Menu điều hướng chỉ dùng các từ neo ngắn gọn, dễ quét mắt: *"Lợi ích"*, *"Lộ trình"*, *"Phương pháp"*, *"Giảng viên"*, *"Học phí"*, *"FAQ"*.
@@ -62,9 +66,15 @@ Skill này đóng vai trò là **Giám đốc Thiết kế UI/UX & Chuyên gia T
    - Khi sử dụng các thư viện hiệu ứng chuyển động tự động (như `InfiniteMovingCards`, `Marquee`, `Timeline`...), **bắt buộc kiểm tra và bổ sung đầy đủ `@keyframes` và class phụ trợ trong `src/app/globals.css`** (Ví dụ: `@keyframes scroll` và `.animate-scroll`).
    - Đảm bảo hiệu ứng luôn chạy mượt mà 60fps ngay khi trang web tải xong, không bị đứng im do thiếu class animation.
 
+7. 🛡️ **Cổng Kiểm định Chất lượng Bắt buộc 100 Điểm (Mandatory QA Audit Gateway)**:
+   - Trước khi bàn giao sản phẩm cuối hoặc gửi báo cáo ở Bước 5, **BẮT BUỘC** chạy lệnh `npm run audit` (hoặc gọi subagent `web_qa_inspector`).
+   - Hệ thống tự động quét 5 cổng kiểm định: (1) Zero-Fluff không hư từ, (2) Typography Tiếng Việt & H1 ALL CAPS, (3) Phối màu 60-30-10 & Viền hairline 1px, (4) Tailwind v4 keyframes, (5) TypeScript 0 lỗi.
+   - Chỉ bàn giao khi đạt **100/100 ĐIỂM** tuyệt đối!
+
 ---
 
 ## QUY TRÌNH 6 BƯỚC BẮT BUỘC (TUÂN THỦ TUYỆT ĐỐI THỨ TỰ)
+
 
 Khi người dùng gọi `/skill-web` (hoặc `/skill_web` hoặc yêu cầu thiết kế/nâng cấp web), bạn **PHẢI** đi theo đúng 6 bước tuần tự dưới đây. **Tuyệt đối không nhảy cóc** viết code trước khi chốt Bố cục (Bước 2) và chốt Hiệu ứng (Bước 3).
 
@@ -148,7 +158,10 @@ Dựa **chính xác trên danh sách các Phần (Sections) vừa chốt ở Bư
 
 ### BƯỚC 5: Báo cáo Giá trị Gia tăng sau mỗi lần Hoàn thành / Cập nhật (3-Pillar Impact Report)
 
-Mỗi khi hoàn thành dựng trang hoặc vừa cập nhật xong một tinh chỉnh giao diện, bạn **PHẢI** gửi kèm một **Báo cáo Tác động Ngắn gọn** trên 3 phương diện:
+> [!IMPORTANT]
+> **Điều kiện tiên quyết trước khi báo cáo:** Agent BẮT BUỘC phải chạy `npm run audit` (hoặc gọi subagent `web_qa_inspector`) và đạt **100/100 ĐIỂM** tuyệt đối. Nếu còn bất kỳ lỗi nào, phải sửa ngay lập tức trước khi xuất báo cáo cho người dùng.
+
+Mỗi khi hoàn thành dựng trang hoặc vừa cập nhật xong một tinh chỉnh giao diện, bạn **PHẢI** gửi kèm Bảng điểm Scorecard kiểm định 100/100 và **Báo cáo Tác động Ngắn gọn** trên 3 phương diện:
 
 1. 👁️ **Gia tăng về Thị giác (Visual Experience):**
    * *Bản cập nhật này đã tạo ra điểm hội tụ ánh nhìn (Focal Point), độ tương phản, hay chiều sâu không gian mới như thế nào?*
@@ -156,6 +169,7 @@ Mỗi khi hoàn thành dựng trang hoặc vừa cập nhật xong một tinh ch
    * *Hiệu ứng/bố cục mới tác động gì đến cảm xúc người xem? (Tăng sự tin tưởng, cảm giác sản phẩm đắt giá/chuyên nghiệp, giảm sự nhàm chán hay kích thích sự tò mò).*
 3. 🎯 **Gia tăng về Hành động Chuyển đổi (Behavioral / CRO Impact):**
    * *Nó giúp dẫn dắt mắt người dùng từ tiêu đề $\rightarrow$ nội dung $\rightarrow$ bấm nút CTA mượt mà hơn ra sao? Giảm ma sát khi thao tác như thế nào?*
+
 
 ---
 

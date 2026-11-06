@@ -57,9 +57,9 @@ export function SupabaseTemplate() {
 
           {/* Main Title - ALL CAPS according to Vietnamese rule */}
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] tracking-tight">
-            XÂY DỰNG SẢN PHẨM TRONG CUỐI TUẦN,{" "}
+            XÂY DỰNG NHANH,{" "}
             <span className="text-emerald-400">
-              MỞ RỘNG TỚI HÀNG TRIỆU NGƯỜI
+              MỞ RỘNG HÀNG TRIỆU NGƯỜI
             </span>
           </h1>
 

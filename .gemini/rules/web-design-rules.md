@@ -76,3 +76,15 @@ Tuyệt đối cấm biến website thành "bảng đèn neon / rạp xiếc mà
 5. Báo cáo giá trị gia tăng sau mỗi cập nhật (Thị giác, Tâm lý khách hàng, CRO).
 6. Đồng hành tinh chỉnh liên tục cho đến khi hoàn thiện 100%.
 
+## 6. CỔNG KIỂM ĐỊNH CHẤT LƯỢNG BẮT BUỘC TRƯỚC KHI BÀN GIAO (MANDATORY QA GATEKEEPER)
+Mọi AI Coding Agent (Antigravity, Claude, Cursor) trước khi bàn giao bất kỳ trang web nào cho người dùng **BẮT BUỘC PHẢI CHẠY LỆNH**:
+```bash
+npm run audit
+```
+hoặc kích hoạt subagent `web_qa_inspector`.
+
+Chỉ khi hệ thống kiểm định xuất ra:
+`🎉 KẾT QUẢ: ĐẠT TIÊU CHUẨN CHUẨN MỰC 100%! SẴN SÀNG BÀN GIAO CHO NGƯỜI DÙNG.`
+thì agent mới được phép hoàn tất lượt trả lời và gửi sản phẩm cho người dùng. Nếu điểm dưới 100, agent phải tự động sửa lỗi ngay lập tức.
+
+

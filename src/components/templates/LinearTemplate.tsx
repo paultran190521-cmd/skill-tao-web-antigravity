@@ -71,9 +71,9 @@ export function LinearTemplate() {
 
           {/* Main Title - ALL CAPS according to Vietnamese rule */}
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.12] tracking-tight max-w-3xl">
-            CÔNG CỤ QUẢN TRỊ DỰ ÁN CHO{" "}
+            QUẢN LÝ DỰ ÁN CHO{" "}
             <span className="text-neutral-400">
-              ĐỘI NGŨ KỸ SƯ CẤP CAO
+              KỸ SƯ TINH HOA
             </span>
           </h1>
 

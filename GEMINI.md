@@ -7,6 +7,7 @@ Dự án này là hệ thống Web Landing Page tối ưu chuyển đổi (CRO) 
 - Xây dựng bản production: `npm run build`
 - Khởi động bản build: `npm run start`
 - Kiểm tra lỗi cú pháp: `npm run lint`
+- Kiểm định chất lượng chuẩn mực web (100 điểm): `npm run audit`
 
 ## 2. KHO KỸ NĂNG TÍCH HỢP TRONG DỰ ÁN (PROJECT SKILLS)
 Dự án được đóng gói kèm các kỹ năng tự động hóa nằm tại:
@@ -21,3 +22,11 @@ Bất kỳ AI Agent nào khi mở dự án từ xa đều có thể kích hoạt
 3. **Màu sắc 60-30-10**: Giữ bảng màu thanh lịch, tập trung vào 1 màu nhấn (Accent) duy nhất cho nút CTA chính.
 4. **Không xung đột hiệu ứng**: Trong 1 màn hình chỉ có 1 điểm nhấn chuyển động chính.
 5. **Nội dung quét nhanh**: Trình bày theo mô hình Bite - Snack - Meal, loại bỏ các khối văn bản dài đặc quánh.
+
+## 4. CỔNG KIỂM ĐỊNH CHẤT LƯỢNG BẮT BUỘC (WEB QA INSPECTOR)
+Trước khi bàn giao bất kỳ trang web hay component nào cho người dùng, AI Agent BẮT BUỘC phải chạy:
+```bash
+npm run audit
+```
+hoặc gọi subagent `web_qa_inspector`. Chỉ bàn giao khi điểm đạt **100/100 ĐIỂM** tuyệt đối. Nếu có lỗi, phải sửa ngay lập tức!
+

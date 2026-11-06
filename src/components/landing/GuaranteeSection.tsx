@@ -40,7 +40,7 @@ export function GuaranteeSection() {
               CAM KẾT CHẤT LƯỢNG & BẢO CHỨNG RỦI RO HOÀN TIỀN 100%
             </h2>
             <p className="mt-3 text-xs sm:text-base text-neutral-400">
-              Chúng tôi hiểu sự cẩn trọng của cha mẹ khi đầu tư giáo dục cho con. Mọi rủi ro thuộc về chúng tôi!
+              Bảo chứng an tâm tuyệt đối cho phụ huynh: Hoàn trả 100% học phí không điều kiện trong 24 giờ.
             </p>
           </div>
 
